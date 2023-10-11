@@ -4,11 +4,11 @@ body {
     text-align: center;
 }
 form {
-    max-width: 500px;
     text-align: left;
     padding: 20px;
     border: 2px solid black;
     border-radius: 10px;
+    justify-content: center;
 }
 .input-element {
     margin: 10px;
@@ -28,4 +28,9 @@ select {
 input[type="checkbox"] {
     width: 14px;
     height: 15px;
+}
+#survey-form {
+    width: 500px;
+    display: grid;
+    justify-content: space-between;
 }
