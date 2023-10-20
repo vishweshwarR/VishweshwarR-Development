@@ -3,17 +3,180 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>tachnical Documentation</title>
+        <title>Javascript Documentation</title>
+        <link rel="stylesheet" href="techdoc.css" />
     </head>
     <body>
-        <main id="main-doc">
-            <section class="main-section">
-                <header>s</header>
-            </section>
-            <section class="main-section"></section>
-            <section class="main-section"></section>
-            <section class="main-section"></section>
-            <section class="main-section"></section>
+        <nav id="navbar">
+            <header>Java documentation</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Getting_started_with_Java"
+                        >Getting started with Java</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#Java_Entry_point"
+                        >Java Entry point</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#Starting_to_the_Console"
+                        >Starting to the Console</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#Declaring_Functions"
+                        >Declaring Functions</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#Object_Oriented_programming"
+                        >Object Oriented programming</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <main-doc id="main-doc">
+                <section class="Main-section" id="Getting_started_with_Java">
+                    <header>Getting started with Java</header>
+                    <p>Steps in gettting started</p>
+                    <ol>
+                        <li>Download Java</li>
+                        <li>Download Java SDK</li>
+                        <li>Get in Integrated Development Environment (IDE)</li>
+                        <li>Start a pproject within th eIde</li>
+                        <li>Code up "Hello world" and run the code</li>
+                    </ol>
+                </section>
+                <section class="Main-section" id="Java_Entry_point">
+                    <header>Java Entry point</header>
+                    <p>
+                        It is categrorized by its (string[] arg) as a parameter
+                        to the function
+                    </p>
+                    <pre>
+                        <code>
+                            public class MyMainFunction{
+                                /* Java main function example*/
+                                public statix void main(string[] args){
+
+                                }
+                            }
+                        </code>
+                    </pre>
+                    <p>
+                        As you can see the main function is wrapped within a
+                        class which is part of the object oriented structure of
+                        java projects.
+                    </p>
+                    <p>The name of the project is therefore "MyMainFunction"</p>
+                </section>
+                <section class="Main-section" id="Starting_to_the_Console">
+                    <header>Starting to the Console</header>
+                    <p>
+                        In order to print to the console. we use
+                        system.ou.printIn.
+                    </p>
+                    <p>
+                        I know it is very long and cumbersome,but this isthe way
+                        it's done
+                    </p>
+                    <pre>
+                    <code>
+                        public class MyMainFunction{ 
+                            /* Java mainfunctionexample*/ 
+                            public statix void main(string[]args)
+                        { System.out.println("Hello World")
+                     }
+                     }
+                    </code>
+                    </pre>
+                    <p>
+                        In this example we are printing out "Hello World" to the
+                        console when we run the program.
+                    </p>
+                </section>
+                <section class="Main-section" id="Declaring_Functions">
+                    <header>Declaring Functions</header>
+                    <p>
+                        Functions are actually called methods in java.Here is an
+                        example of how to declare a Java method.
+                    </p>
+                    <img
+                        class="image"
+                        src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/02/example-of-java-method-declaration.jpg"
+                        alt="image"
+                    />
+                    <p>Some Copiable Code:</p>
+                    <pre>
+                        <code>
+                            public static int maxNumber( int a, int b)
+                             {
+                                //method body
+                                } 
+
+                                void printStars()
+                                {           
+                                     System.out.println( “ * * * ” );
+                             }
+                        </code>
+                    </pre>
+                </section>
+                <section class="Main-section" id="Object_Oriented_programming">
+                    <header>Object Oriented programming</header>
+                    <p>
+                        Java is known as an object oriented programming
+                        language.
+                    </p>
+                    <p>
+                        An example of this might be a student class to represent
+                        a student
+                    </p>
+                    <pre>
+                        <code>//Defining a Student class.  
+                            class Student{  
+                            //defining fields  
+                            int id;//field or data member or instance variable  
+                            String name;  
+                            //creating main method inside the Student class  
+                            public static void main(String args[]){  
+                            //Creating an object or instance  
+                            Student s1=new Student();//creating an object of Student  
+                            //Printing values of the object  
+                            System.out.println(s1.id);//accessing member through reference variable  
+                            System.out.println(s1.name);  
+                            }  
+                            }                           
+                        </code>
+                    </pre>
+                    <p>Another Example for students</p>
+                    <pre>
+                        <code>//Java Program to demonstrate having the main method in   
+                             //another class  
+                            //Creating Student class.  
+                            class Student{  
+                            int id;  
+                            String name;  
+                            }  
+                            //Creating another class TestStudent1 which contains the main method  
+                            class TestStudent1{  
+                            public static void main(String args[]){  
+                            Student s1=new Student();  
+                            System.out.println(s1.id);  
+                             System.out.println(s1.name);  
+                            }  
+</code>
+                    </pre>
+                </section>
+                <footer>
+                    <p>
+                        Documentation brought to you on the fly by Vishweshwar
+                        Raghavan
+                    </p>
+                </footer>
+            </main-doc>
         </main>
     </body>
 </html>
