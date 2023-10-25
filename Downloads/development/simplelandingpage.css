@@ -32,20 +32,14 @@ nav {
     align-items: center;
 }
 
-.items {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.items a:link {
+.nav a:link {
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.items a:hover {
+.nav a:hover {
     color: red;
 }
 
@@ -54,7 +48,7 @@ nav {
 }
 
 button {
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 0.6rem 1rem;
     font-weight: bold;
     color: white;
@@ -63,6 +57,7 @@ button {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
     border: none;
+    gap: 10px;
 }
 
 button:hover {
@@ -113,19 +108,34 @@ button:hover {
     align-self: start;
     margin-top: 3rem;
 }
+nav ul {
+    display: flex;
+    list-style: none;
+}
 
+nav li {
+    padding-left: 1rem;
+}
 /* media queries */
 
 @media only screen and (max-width: 800px) {
-    .items {
-        display: none;
-    }
-
     .row {
         grid-template-columns: 1fr;
     }
     .learn-more {
         align-self: start;
         margin: 1rem 0px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+    nav li {
+        padding: 0.5rem 0;
     }
 }
