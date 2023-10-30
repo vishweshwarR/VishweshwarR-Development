@@ -5,7 +5,7 @@ body {
         rgba(0, 212, 255, 1) 0%,
         rgba(11, 3, 45, 1) 100%
     );
-    background-image: url(/images/bgcard.jpg);
+    background-image: url(images/bgcard.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -32,7 +32,7 @@ body {
     height: 50%;
 }
 .banner-image {
-    background-image: url(/images/toyo.avif);
+    background-image: url(images/toyo.avif);
     background-position: center;
     background-size: cover;
     height: 300px;
