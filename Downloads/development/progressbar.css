@@ -1,0 +1,40 @@
+:root {
+    --bar-color1: #1fe576;
+    --bar-color2: #d7e5de;
+    --bar-width: 200px;
+    --bar-height: 20px;
+    --animation-duration: 8s;
+}
+body {
+    background-color: #0b0e0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.progress-bar {
+    position: relative;
+    width: var(--bar-width);
+    height: var(--bar-height);
+    border-radius: calc(var(--bar-height) / 2);
+    overflow: hidden;
+    background-color: var(--bar-color2);
+}
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left center;
+    background-color: var(--bar-color1);
+    animation: var(--animation-duration) progress ease-out forwards;
+}
+@keyframes progress {
+    to {
+        transform: scale(1);
+    }
+}
