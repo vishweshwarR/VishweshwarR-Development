@@ -136,7 +136,6 @@ body {
     height: 100%;
 }
 
-/* Animations */
 @keyframes ball {
     from {
         transform: rotate(0) translateY(-6.5em);
