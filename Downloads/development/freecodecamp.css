@@ -1,4 +1,3 @@
-/* Custom properties/variables  */
 :root {
     --main-white: #f0f0f0;
     --main-red: #be3144;
@@ -6,13 +5,11 @@
     --main-gray: #303841;
 }
 
-/* Base reset */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* box-sizing and font sizing */
 *,
 *::before,
 *::after {
@@ -22,51 +19,27 @@
 html {
     box-sizing: border-box;
 
-    /* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-  */
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
-/* A few media query to set some font sizes at different screen sizes.
- * This helps automate a bit of responsiveness.
- * The trick is to use the rem unit for size values, margin and padding.
- * Because rem is relative to the document font size
- * when we scale up or down the font size on the document
- * it will affect all properties using rem units for the values.
-*/
-
-/* I am using the em unit for breakpoints
- * The calculation is the following
- * screen size divided by browser base font size
- * As an example: a breakpoint at 980px
- * 980px / 16px = 61.25em
-*/
-
-/* 1200px / 16px = 75em */
 @media (max-width: 75em) {
     html {
         font-size: 60%;
     }
 }
 
-/* 980px / 16px = 61.25em */
 @media (max-width: 61.25em) {
     html {
         font-size: 58%;
     }
 }
 
-/* 460px / 16px = 28.75em */
 @media (max-width: 28.75em) {
     html {
         font-size: 55%;
     }
 }
-
-/* Base styles */
 
 body {
     font-family: "Poppins", sans-serif;
@@ -105,8 +78,6 @@ img {
     width: 100%;
 }
 
-/* nav */
-
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -144,8 +115,6 @@ img {
     background: var(--main-blue);
 }
 
-/* Welcome section */
-
 .welcome-section {
     display: flex;
     flex-direction: column;
@@ -163,8 +132,6 @@ img {
     font-style: italic;
     color: var(--main-red);
 }
-
-/* Projects section */
 
 .projects-section {
     text-align: center;
@@ -184,7 +151,6 @@ img {
     }
 }
 
-/* "Automagic" image grid using no media queries */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
