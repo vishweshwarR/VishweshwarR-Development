@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+}
+.card {
+    border-radius: 30px;
+    background: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 2rem;
+    max-width: 800px;
+    overflow: hidden;
+    animation-iteration-count: 3;
+    border: 2px solid white;
+    height: 300px;
+    width: 700px;
+    transform: rotate(-5deg);
+    transition: transform 0.2s;
+}
+.card-content p {
+    margin: 0;
+}
+.card:hover {
+    transform: rotate(0);
+}
+.thumb {
+    border-radius: 100%;
+    border: 5px solid #fff;
+    height: 60px;
+    margin: 0 1.5rem;
+    transition: transform 0.3s;
+    width: 100px;
+}
+.card:hover .thumb {
+    transform: scale(1.15);
+}
+.img {
+    display: flex;
+    justify-content: center;
+}
+.card-content {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+}
+.place {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    height: 70px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: lightgray;
+    font-size: 30px;
+    text-align: center;
+    border: 1px white;
+}
+.type {
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+}
+textarea:focus,
+input:focus {
+    color: violet;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
