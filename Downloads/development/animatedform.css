@@ -1,0 +1,217 @@
+body {
+    margin: auto;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    background: #263033;
+    position: absolute;
+    top: 25vh;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+.mobilesize {
+    width: 414px;
+    min-height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.SingInBox {
+    width: 300px;
+    position: absolute;
+}
+input[name="r1"] {
+    display: none;
+    margin-top: -60px;
+    margin-left: 5px;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+}
+button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-size: 14pt;
+}
+.toptitale {
+    font-size: 18pt;
+    position: absolute;
+    top: 0px;
+    font-weight: 500;
+    line-height: 2;
+}
+.toptitale label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    padding-top: 0px;
+    user-select: none;
+}
+.pointtop {
+    display: none;
+    width: 0px;
+    height: 0px;
+    border-bottom: 25px solid #fff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+.SingInBox input,
+.si,
+.su,
+.re,
+button {
+    display: none;
+}
+#SingIn:checked ~ .toptitale label[for="SingIn"] {
+    color: #fff;
+}
+#SignUp:checked ~ .toptitale label[for="SignUp"] {
+    color: #fff;
+}
+#Reset:checked ~ .toptitale label[for="Reset"] {
+    color: #fff;
+}
+
+.toptitale label[for="SignUp"]:hover,
+.toptitale label[for="SingIn"]:hover,
+.toptitale label[for="Reset"]:hover {
+    text-shadow: inside 0px 3px 8px #333;
+    color: #fff;
+}
+
+#SingIn:checked ~ .SingInBox input[name="email"],
+#SingIn:checked ~ .SingInBox input[name="pass"],
+#SingIn:checked ~ .SingInBox button .si,
+#SingIn:checked ~ .SingInBox button {
+    display: block;
+    animation: show1 0.5s;
+}
+#SingIn:checked ~ .pointtop {
+    display: block;
+    position: absolute;
+    left: 80px;
+    top: 45px;
+    animation: point1 0.5s;
+}
+
+#SignUp:checked ~ .SingInBox input[name="email"],
+#SignUp:checked ~ .SingInBox input[name="pass"],
+#SignUp:checked ~ .SingInBox input[name="re-pass"],
+#SignUp:checked ~ .SingInBox button .su,
+#SignUp:checked ~ .SingInBox button {
+    display: block;
+    animation: show2 0.5s;
+}
+#SignUp:checked ~ .pointtop {
+    display: block;
+    position: absolute;
+    left: 190px;
+    top: 45px;
+    animation: point2 0.5s;
+}
+
+#Reset:checked ~ .SingInBox input[name="email"],
+#Reset:checked ~ .SingInBox button .re,
+#Reset:checked ~ .SingInBox button {
+    display: block;
+    animation: show3 0.5s;
+}
+#Reset:checked ~ .pointtop {
+    display: block;
+    position: absolute;
+    left: 295px;
+    top: 45px;
+    animation: point3 0.5s;
+}
+
+@keyframes point1 {
+    0% {
+        top: 55px;
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        left: 80px;
+        opacity: 1;
+    }
+}
+@keyframes point2 {
+    0% {
+        top: 55px;
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        left: 190px;
+        opacity: 1;
+    }
+}
+@keyframes point3 {
+    0% {
+        top: 55px;
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        left: 295px;
+        opacity: 1;
+    }
+}
+
+@keyframes show1 {
+    0% {
+        opacity: 0;
+        margin-top: 25px;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes show2 {
+    0% {
+        opacity: 0;
+        margin-top: 25px;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes show3 {
+    0% {
+        opacity: 0;
+        margin-top: 25px;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

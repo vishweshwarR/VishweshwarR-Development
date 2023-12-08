@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Animated form</title>
+        <link rel="stylesheet" href="animatedform.css" />
+    </head>
+    <body>
+        <form>
+            <div class="mobilesize">
+                <input type="radio" name="r1" id="SingIn" checked="" />
+                <input type="radio" name="r1" id="SignUp" />
+                <input type="radio" name="r1" id="Reset" />
+
+                <div class="toptitale">
+                    <label for="SingIn">Sign In</label>
+                    <label for="SignUp">Sign Up</label>
+                    <label for="Reset">Reset</label>
+                </div>
+                <span class="pointtop"></span>
+                <div class="SingInBox">
+                    <input type="text" name="email" placeholder="Email" />
+                    <input type="password" name="pass" placeholder="password" />
+                    <input
+                        type="password"
+                        name="re-pass"
+                        placeholder="Repeat password"
+                    />
+                    <button>
+                        <span class="si">Sign In</span>
+                        <span class="su">Sign Up</span>
+                        <span class="re">Reset</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
